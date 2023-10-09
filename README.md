@@ -64,3 +64,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Catatan
+
+Step-step setelah clone:
+1. Pada terminal, ketikkan "composer install". Hal ini diperlukan karena pada saat kita push ke git, depedensi tidak ikut terpush.
+2. Lalu, duplikat file ".env.example" dan rename menjadi ".env" saja.
+3. Pada terminal, ketikkan "php artisan key:generate".
+4. Yang terakhir, jalankan filenya dengan mengetikkan "php artisan serve" pada terminal.
