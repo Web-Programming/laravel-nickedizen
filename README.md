@@ -72,3 +72,9 @@ Step-step setelah clone:
 2. Lalu, duplikat file ".env.example" dan rename menjadi ".env" saja.
 3. Pada terminal, ketikkan "php artisan key:generate".
 4. Yang terakhir, jalankan filenya dengan mengetikkan "php artisan serve" pada terminal.
+
+## Controller
+Buat dengan menggunakan command pada terminal:
+1. php artisan make:controller NamaKontroller 
+2. php artisan make:controller NamaKontroller --resource
+3. php artisan make:controller NamaKontroller --apiResource
