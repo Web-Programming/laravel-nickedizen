@@ -33,7 +33,7 @@ class MahasiswaController extends Controller
             [
                 [
                     'nama' => 'Nicholas Edison',
-                    'npm' => '2226250005',
+                    'npm' => '2226250051',
                     'tempat_lahir' => 'Seoul',
                     'tanggal_lahir' => date("Y-m-d")
                 ],
@@ -58,7 +58,7 @@ class MahasiswaController extends Controller
 
     public function deleteElq()
     {
-        $mhs = Mahasiswa::where('npm','2226250037')->first();
+        $mhs = Mahasiswa::where('npm', '2226250037')->first();
         $mhs->delete();
         dump($mhs);
     }
@@ -67,6 +67,6 @@ class MahasiswaController extends Controller
     {
         $kampus = "Universitas Multi Data Palembang";
         $mhs = Mahasiswa::all();
-        return view("mahasiswa.index", ['allmahasiswa' => $mhs,'kampus'=> $kampus]);
+        return view("mahasiswa.index", ['allmahasiswa' => $mhs, 'kampus' => $kampus]);
     }
 }
