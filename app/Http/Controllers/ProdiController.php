@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Prodi;
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\DB;
 
 class ProdiController extends Controller
@@ -29,5 +30,13 @@ class ProdiController extends Controller
             }
             echo "<hr>";
         }
+    }
+
+    public function create() {
+        return view("prodi.create");
+    }
+
+    public function store(Request $request) {
+        dump($request);
     }
 }
