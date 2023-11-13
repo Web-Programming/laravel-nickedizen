@@ -116,3 +116,4 @@ Route::get('/prodi/{prodi}', [
 
 Route::get('/prodi/{prodi}/edit', [ProdiController::class, 'edit'])->name('prodi.edit');
 Route::patch('/prodi/{prodi}', [ProdiController::class, 'update'])->name('prodi.update');
+Route::delete('/prodi/{prodi}', [ProdiController::class,'destroy'])->name('prodi.destroy');
