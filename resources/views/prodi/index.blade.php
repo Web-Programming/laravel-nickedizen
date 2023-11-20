@@ -32,6 +32,7 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr>
+                <th>Logo</th>
                 <th>Nama</th>
                 <th>Aksi</th>
             </tr>
@@ -39,6 +40,9 @@
         <tbody>
             @foreach ($prodis as $item)
                 <tr>
+                    <td>
+                        <img src="{{ asset('storage/'.$item->foto)}}" width="100px">
+                    </td>
                     <td> {{ $item->nama}} </td>
                     <td>
                         <form action="{{ route('prodi.destroy', ['prodi' => $item->id]) }}"
